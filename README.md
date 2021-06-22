@@ -5,4 +5,4 @@ const url = 'https://github.com/yashmehta94';
 
 const ObjectParams = {'state': 'Florida', 'city': '&Tampa', 'zip' : 123321};
 
-getURLastString(url,ObjectParams);
+getURLastString(url,ObjectParams); // "https://github.com/yashmehta94?state=Florida&city=%26Tampa&zip=123321"
