@@ -1,0 +1,18 @@
+/* 
+return String if valid URL otherwise null
+*/
+function getURLastString(baseURL,objArray){
+  try{
+    if(objArray && baseURL){
+      let url = new URL(baseURL);
+      for (const [key, value] of Object.entries(objArray)) {
+          url.searchParams.set(key, value);
+      }
+      return url.href;
+    }
+  }
+  catch(err){
+     return null;
+  }
+  return null;
+}
